@@ -12,9 +12,6 @@ export default class extends Controller {
 
   connect() {
     this.collapsible = M.Collapsible.init(this.element, {});
-    console.log("connected")
-    console.log("connected")
-    console.log("connected")
   }
 
   disconnect() {
