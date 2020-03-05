@@ -8,16 +8,21 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
-    %script{:src => "https://unpkg.com/aos@2.3.1/dist/aos.js"}
     %link{:href => "https://unpkg.com/aos@2.3.1/dist/aos.css", :rel => "stylesheet"}/
+    
   %body
-    %nav.z-depth-0
-      .nav-wrapper.maximum-nav-width
+    %nav#main-header.z-depth-0
+      .nav-wrapper.maximum-nav-width.fixed
         %a{:href => "/"}
         %ul.right.nav-items
           %li
-            = link_to("Edit", interfaces_path(), class: "nav-item")
+            %a{:href => "#goal"}
+              %span Goals
           %li
-            = link_to("Login", interfaces_path(), class: "nav-item")        
+            %a{:href => "#task"}
+              %span Tasks    
       = yield
+    %script{:src => "https://unpkg.com/aos@2.3.1/dist/aos.js"}
+
+
 

@@ -84,6 +84,7 @@
 
 .add-goal-text {
   font-size: 2.2rem;
+  padding: 0 10px;
 }
 
 .task-text {
@@ -109,4 +110,12 @@
 
 .collapsible-body {
   background-color: #333 !important;
+}
+
+.collapsible-header {
+  border: none !important;
+}
+
+hr {
+  border-top: 1px solid #f6f6f6;
 }
