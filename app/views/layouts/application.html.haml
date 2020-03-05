@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title PencilCase
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    %nav.z-depth-0
+      .nav-wrapper
+        %a{:href => "/"}
+        %ul.right.nav-items
+          %li
+            = link_to("Profile", interfaces_path(), class: "nav-item")
+          %li
+            = link_to("Guidelines", interfaces_path(), class: "nav-item")        
+    .container 
+      = yield
+
