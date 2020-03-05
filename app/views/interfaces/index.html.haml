@@ -1,0 +1,84 @@
+.container.remove-border-top
+  .row.remove-margin.position-relative
+    .col.l3.side-nav-style.remove-margin.position-absolute.hide-on-med-and-down
+      %li here
+      %li here
+    .col.l9.offset-l3
+      .dashboard{ data: { controller: "aos"} }
+        .row.remove-margin
+          .col.m8.remove-padding
+            .background-lavendar.box-1.light-grey-border.text-white.add-box-padding{"data-aos" => "zoom-out-up", "data-aos-delay" => "100"}
+              %h2 Hi, Isaac
+              %h5 Today is going to be a great day,
+              %h3 What is on the list today?
+          .col.m4.s6.remove-padding
+            .offset-m8.background-blue.box-3.light-grey-border.add-box-padding{"data-aos" => "zoom-out-up", "data-aos-delay" => "100"}
+              %h3.add-button-text.center-align Add a goal
+          .col.m4.s6.remove-padding
+            .offset-m8.background-green.box-2.light-grey-border.add-box-padding{"data-aos" => "zoom-out-up", "data-aos-delay" => "100"}
+              %h3.add-button-text.center-align Add a task
+
+        -# goals 
+        .row.remove-margin
+          .col.m1.s1.remove-padding 
+            .center-align.add-box-padding.circle{"data-aos" => "zoom-out-right", "data-aos-delay" => "100"}
+              %h5.center-align.circle-num-style.right 1
+          .col.m11.s11.remove-padding 
+            .background-pink.light-grey-border.add-box-padding{"data-aos" => "zoom-out-left", "data-aos-delay" => "100"}
+              %h3.center-align.add-goal-text Climb a mountain
+              
+        .row.remove-margin
+          .col.m1.s1.remove-padding 
+            .center-align.add-box-padding{"data-aos" => "zoom-out-right", "data-aos-delay" => "100"}
+              %h5.center-align.circle-num-style.right 2
+          .col.m11.s11.remove-padding 
+            .background-pink.light-grey-border.add-box-padding{"data-aos" => "zoom-out-left", "data-aos-delay" => "100"}
+              %h3.center-align.add-goal-text Write a reflection paper, and submit it
+              
+        .row.remove-margin
+          .col.m1.s1.remove-padding 
+            .center-align.add-box-padding{"data-aos" => "zoom-out-right", "data-aos-delay" => "100"}
+              %h5.center-align.circle-num-style.right 3
+          .col.m11.s11.remove-padding 
+            .background-pink.light-grey-border.add-box-padding{"data-aos" => "zoom-out-left", "data-aos-delay" => "100"}
+              %h3.center-align.add-goal-text Write a new song
+
+        -# tasks
+        .row.remove-margin
+          .remove-padding{"data-aos" => "zoom-in-up"}
+            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+              %li.light-grey-border.add-box-padding
+                .collapsible-header.collapsible-container.hoverable
+                  .task-text Take out the trash
+                .collapsible-body.collapsible-container
+                  .text-white.task-text Lorem ipsum dolor sit amet.
+          .remove-padding{"data-aos" => "zoom-in-up"}
+            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+              %li.light-grey-border.add-box-padding
+                .collapsible-header.collapsible-container.hoverable
+                  .task-text Do my homework
+                .collapsible-body.collapsible-container
+                  .text-white.task-text Lorem ipsum dolor sit amet.
+          .remove-padding{"data-aos" => "zoom-in-up"}
+            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+              %li.light-grey-border.add-box-padding
+                .collapsible-header.collapsible-container.hoverable
+                  .task-text Walk the dog a very long time
+                .collapsible-body.collapsible-container
+                  .text-white.task-text Lorem ipsum dolor sit amet.
+          .remove-padding{"data-aos" => "zoom-in-up"}
+            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+              %li.light-grey-border.add-box-padding
+                .collapsible-header.collapsible-container.hoverable
+                  .task-text Eat dinner
+                .collapsible-body.collapsible-container
+                  .text-white.task-text Lorem ipsum dolor sit amet.
+          .remove-padding{"data-aos" => "zoom-in-up"}
+            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+              %li.light-grey-border.add-box-padding
+                .collapsible-header.collapsible-container.hoverable
+                  .task-text Meal prep
+                .collapsible-body.collapsible-container
+                  .text-white.task-text Lorem ipsum dolor sit amet.
+
+

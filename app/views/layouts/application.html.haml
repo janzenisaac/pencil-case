@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %title PencilCase
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %script{:src => "https://unpkg.com/aos@2.3.1/dist/aos.js"}
+    %link{:href => "https://unpkg.com/aos@2.3.1/dist/aos.css", :rel => "stylesheet"}/
+  %body
+    %nav.z-depth-0
+      .nav-wrapper.maximum-nav-width
+        %a{:href => "/"}
+        %ul.right.nav-items
+          %li
+            = link_to("Edit", interfaces_path(), class: "nav-item")
+          %li
+            = link_to("Login", interfaces_path(), class: "nav-item")        
+      = yield
+
