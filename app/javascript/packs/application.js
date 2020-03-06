@@ -11,8 +11,8 @@ window.$ = require("jquery")
 import "controllers"
 
 import "materialize-css/dist/css/materialize.css";
-
-
+import "aos/dist/aos.css"
+import "aos/dist/aos.js"
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
