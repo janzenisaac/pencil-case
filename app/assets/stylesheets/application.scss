@@ -14,9 +14,9 @@
  *= require_self
  */
 
-// color palette
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
 
+html,
 body {
   background-color: #242423;
   color: #333 !important; 
@@ -70,9 +70,9 @@ nav {
   width: min-content;
   margin: auto;
   background-color: #333533;
-  padding: 10px;
+  padding: 7px 9px;
   font-weight: 700;
-  border: 2px solid #f6f6f6;
+  // border: 2px solid #f6f6f6;
   color: #F0D2D1;
 }
 
@@ -82,4 +82,11 @@ nav {
 
 .light-font {
   font-weight: 400;
+}
+
+// remove border from small screens
+@media only screen and (max-width: 600px) {
+  .container {
+    border: none !important;
+  }
 }

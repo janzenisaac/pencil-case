@@ -5,7 +5,7 @@
       %hr
       %li I like french fries
       %li Clean the toilet
-    .col.l9.offset-l3
+    .col.l9.offset-l3.s12
       .dashboard{ data: { controller: "aos"} }
         .row.remove-margin
           .col.m8.remove-padding
@@ -100,39 +100,18 @@
             %hr  
         .row.remove-margin
           .remove-padding{"data-aos" => "zoom-in-up", "data-aos-delay" => "400"}
-            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
+            %ul.collapsible-container
               %li.light-grey-border.add-box-padding
-                .collapsible-header.collapsible-container.hoverable
+                .hoverable
                   .task-text Take out the trash
-                .collapsible-body.collapsible-container
-                  .text-white.task-text Lorem ipsum dolor sit amet.
-          .remove-padding{"data-aos" => "zoom-in-up", "data-aos-delay" => "400"}
-            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
-              %li.light-grey-border.add-box-padding
-                .collapsible-header.collapsible-container.hoverable
-                  .task-text Do my homework
-                .collapsible-body.collapsible-container
-                  .text-white.task-text Lorem ipsum dolor sit amet.
-          .remove-padding{"data-aos" => "zoom-in-up", "data-aos-delay" => "400"}
-            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
-              %li.light-grey-border.add-box-padding
-                .collapsible-header.collapsible-container.hoverable
-                  .task-text Walk the dog a very long time
-                .collapsible-body.collapsible-container
-                  .text-white.task-text Lorem ipsum dolor sit amet.
-          .remove-padding{"data-aos" => "zoom-in-up", "data-aos-delay" => "400"}
-            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
-              %li.light-grey-border.add-box-padding
-                .collapsible-header.collapsible-container.hoverable
-                  .task-text Eat dinner
-                .collapsible-body.collapsible-container
-                  .text-white.task-text Lorem ipsum dolor sit amet.
-          .remove-padding{"data-aos" => "zoom-in-up", "data-aos-delay" => "400"}
-            %ul.collapsible.collapsible-container{ data: { controller: "collapsible" } }
-              %li.light-grey-border.add-box-padding
-                .collapsible-header.collapsible-container.hoverable
-                  .task-text Meal prep
-                .collapsible-body.collapsible-container
-                  .text-white.task-text Lorem ipsum dolor sit amet.
+                  .center-align
+                    = form_with() do
+                      .switch
+                        %label
+                          Off
+                          %input{:type => "checkbox"}/
+                          %span.lever
+                          On
+
 
 
