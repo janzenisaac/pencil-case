@@ -9,6 +9,7 @@
   transform: translateX(200px);
   opacity:0;
   animation: start 1s ease-out forwards;
+  height: 100%;
 }
 @keyframes start{
   0%{
@@ -28,6 +29,10 @@
   color: #ffffff;
 }
 
+.text-black {
+  color: #333 !important;
+}
+
 .background-pink {
   background-color: #F0D2D1;
 }
@@ -41,12 +46,13 @@
 }
 
 .box-1 { 
-  overflow: hidden;
   padding: 10px;
+  color: #f6f6f6;
 }
+
 .box-2 {
-  overflow: hidden;
   padding: none;
+  color: #f6f6f6;
 }
 
 .box-2:hover {
@@ -55,8 +61,8 @@
 }
 
 .box-3 {
-  overflow: hidden;
   padding: none;
+  color: #f6f6f6;
 }
 
 .box-3:hover {
@@ -91,6 +97,7 @@
   font-size: 1.2rem;
   padding: 10px 7px;
   line-height: 1.2em;
+  color: #f6f6f6;
 }
 
 .float-tasks-left {
@@ -101,6 +108,7 @@
 .collapsible-container {
   background-color: #242423 !important;
   border-top: none !important;
+  max-width: 300px;
 }
 
 .hoverable:hover {
@@ -118,4 +126,25 @@
 
 hr {
   border-top: 1px solid #f6f6f6;
+}
+
+.note-size {
+  line-height: 1.5rem !important;
+  font-size: 1rem !important;
+}
+
+.task-form {
+  padding: 4px;
+  line-height: 35px;
+}
+
+.switch {
+  background-color: rgb(217, 241, 230) !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+  background-color: #9CC4B2 !important;
+}
+.switch label input[type=checkbox]:checked+.lever {
+  background-color: rgba(156, 196, 178, 0.65) !important;
 }

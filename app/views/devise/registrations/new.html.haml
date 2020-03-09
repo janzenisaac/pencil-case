@@ -1,24 +1,30 @@
 .container.remove-border-top
   .row.remove-margin.position-relative
-    %h2.bold Sign up
+    %h2.bold.text-white Sign up
+    %br
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
       .field
         = f.label :email
         %br/
         = f.email_field :email, autofocus: true, autocomplete: "email", required: true
+      %br
       .field
         = f.label :password
         - if @minimum_password_length
-          %em
+          %em.text-white
             (#{@minimum_password_length} characters minimum)
         %br/
         = f.password_field :password, autocomplete: "new-password", required: true
+      %br
       .field
         = f.label :password_confirmation
         %br/
         = f.password_field :password_confirmation, autocomplete: "new-password", required: true
+      %br
       .actions
         = f.submit "Sign up", class: "btn"
       %br
+      %br
     = render "devise/shared/links"
+    %br

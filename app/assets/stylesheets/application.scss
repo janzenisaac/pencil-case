@@ -20,7 +20,6 @@ html,
 body {
   background-color: #242423;
   color: #333 !important; 
-  box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
  } 
 
@@ -84,13 +83,6 @@ nav {
   font-weight: 400;
 }
 
-// remove border from small screens
-@media only screen and (max-width: 600px) {
-  .container {
-    border: none !important;
-  }
-}
-
 .text-white-with-brdr {
   color: #f6f6f6 !important;
   border-bottom: 1px solid #333533;
@@ -149,8 +141,22 @@ input[type="password"].invalid {
   border: 1px solid #f6f6f6;
   background-color: #333533;
   font-size: 1.2rem;
+  padding: 5px !important;
+  line-height: 2rem;
 }
 
 .bold {
   font-weight: 700;
+}
+
+// remove border from small screens
+@media only screen and (max-width: 600px) {
+
+  html {
+    overflow-x: hidden;
+  }
+
+  .container {
+    border: none !important;
+  }
 }

@@ -8,6 +8,7 @@
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: "stylesheet" }
   %body
     %nav.z-depth-0
       .nav-wrapper.maximum-nav-width
@@ -21,5 +22,5 @@
           - if !user_signed_in? 
             %li
               = link_to("Login", new_user_session_path(), class: "nav-item")       
-      = yield
+    = yield
 
