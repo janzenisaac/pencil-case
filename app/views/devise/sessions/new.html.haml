@@ -1,0 +1,14 @@
+.container.remove-border-top
+  .row.remove-margin.position-relative
+    %h2.bold Log in
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        = f.label :email
+        = f.email_field :email, autofocus: true, autocomplete: "email", required: true
+      .field
+        = f.label :password
+        = f.password_field :password, autocomplete: "current-password", required: true
+      .actions
+        = f.submit "Log in", class: "btn"
+      %br
+    = render "devise/shared/links"
