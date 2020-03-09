@@ -13,9 +13,13 @@
       .nav-wrapper.maximum-nav-width
         %a{:href => "/"}
         %ul.right.nav-items
-          %li
-            = link_to("Edit", interfaces_path(), class: "nav-item")
-          %li
-            = link_to("Login", interfaces_path(), class: "nav-item")        
+          - if user_signed_in?
+            %li
+              = link_to("Edit", interfaces_path(), class: "nav-item")
+            %li
+              = link_to("Logout", destroy_user_session_path(), method: "delete", class: "nav-item")
+          - if !user_signed_in? 
+            %li
+              = link_to("Login", new_user_session_path(), class: "nav-item")       
       = yield
 

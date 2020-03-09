@@ -90,3 +90,67 @@ nav {
     border: none !important;
   }
 }
+
+.text-white-with-brdr {
+  color: #f6f6f6 !important;
+  border-bottom: 1px solid #333533;
+}
+
+.text-white {
+  color: #f6f6f6 !important;
+}
+
+// adding styling to change input colors
+/* label color */
+label {
+  color: #f6f6f6 !important;
+  font-size: 1rem !important; 
+  font-weight: 700;
+}
+/* label focus color */
+input[type="text"]:focus + label {
+  color: #f6f6f6;
+}
+/* label underline focus color */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1px solid #f6f6f6 !important;
+  box-shadow: 0 1px 0 0 #f6f6f6 !important;
+  color: #f6f6f6 !important;
+}
+/* valid color */
+input[type="text"].valid,
+input[type="file"].valid,
+input[type="email"].valid,
+input[type="password"].valid {
+  border-bottom: 1px solid #f6f6f6 !important;
+  box-shadow: 0 1px 0 0 #f6f6f6 !important;
+  color: #f6f6f6 !important;
+}
+/* invalid color */
+input[type="text"].invalid,
+input[type="file"].invalid,
+input[type="email"].invalid,
+input[type="password"].invalid {
+  border-bottom: 1px solid #f6f6f6 !important;
+  box-shadow: 0 1px 0 0 #f6f6f6 !important;
+  color: #f6f6f6 !important;
+}
+
+.btn {
+  background-color: #f6f6f6 !important;
+  color: #333 !important;
+  padding: 0 25px !important;
+}
+
+.link-border {
+  border: 1px solid #f6f6f6;
+  background-color: #333533;
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: 700;
+}
