@@ -56,7 +56,7 @@
 }
 
 .box-2:hover {
-  background-color: #ffffff;
+  background-color: #d9f1e6;
   color: #333 !important;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .box-3:hover {
-  background-color: #ffffff;
+  background-color: #F0D2D1;
   color: #333 !important;
 }
 
@@ -85,17 +85,17 @@
 .add-button-text {
   font-size: 1.2rem;
   vertical-align: text-bottom;
-  margin: 30px 0 !important;
+  padding: 30px 0;
 }
 
 .add-goal-text {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 0 10px;
 }
 
 .task-text {
   font-size: 1.2rem;
-  padding: 10px 7px;
+  padding: 15px 15px;
   line-height: 1.2em;
   color: #f6f6f6;
 }
@@ -147,4 +147,38 @@ hr {
 }
 .switch label input[type=checkbox]:checked+.lever {
   background-color: rgba(156, 196, 178, 0.65) !important;
+}
+
+.header-title {
+  font-size: 2.5rem;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin: 10px 0 5px 0;
+}
+
+// small screens
+@media only screen and (max-width: 600px) {
+
+  html,body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    border: none !important;
+    padding: 20px !important;
+    width: 100% !important;
+    overflow-y: hidden;
+  }
+
+  .collapsible-container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .add-button-text {
+    padding: 20px 0;
+  }
+
 }

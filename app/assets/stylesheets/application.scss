@@ -16,7 +16,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
 
-html,
 body {
   background-color: #242423;
   color: #333 !important; 
@@ -27,6 +26,7 @@ body {
   border: 1px solid #f6f6f6;
   padding: 20px 20px 20px 20px;
   max-width: 1000px !important;
+  overflow: hidden;
 }
 
 .remove-margin {
@@ -147,16 +147,4 @@ input[type="password"].invalid {
 
 .bold {
   font-weight: 700;
-}
-
-// remove border from small screens
-@media only screen and (max-width: 600px) {
-
-  html {
-    overflow-x: hidden;
-  }
-
-  .container {
-    border: none !important;
-  }
 }
